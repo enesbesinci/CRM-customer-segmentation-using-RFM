@@ -24,9 +24,13 @@ Okey but what is Recency, Frequency and Monetary?
 
 #### RECENCY: This refers to the time since a customer's last purchase. Customers who have made recent purchases are considered more valuable and engaged than those who haven't purchased in a while.
 
+For the Recency score, your scale may vary depending on the type of your business. For example, for a car dealer, a Recency score of 3 years might score the highest, but for an e-commerce site, a customer with a Recency of 3 years is likely to be a lost customer.
+
 #### FREQUENCY: This measures how often a customer makes purchases. High-frequency customers are those who purchase regularly and are more likely to be loyal to the brand.
 
 #### MONETARY: This represents the total amount of money a customer has spent over a specific period. Customers with high monetary value are those who spend the most and are considered the most valuable to the business.
+
+All these metrics will vary or scale differently depending on the industry you operate in.
 
 Yes, we now know the RFM (Recency, Frequency, Monetary) metrics. In next step we will develop a customer segmentation model using the RFM metrics.
 
@@ -197,7 +201,34 @@ Yes, we have now analyzed each of our customers with RFM metrics and created cus
 
 # STEP 4: Marketing Scenario
 
-In this step we w
+In this last step we will first interpret some segments and then apply an example of an advertising and marketing activity.
+
+### Interpretation of Segments on Power BI
+
+In this step, we will visualize some key metrics by segment to gain insight into the data. First of all, let's save the data with all variables, metrics and customer segments as csv for use in Power BI.
+
+![Screenshot 2023-12-09 231743](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/9cfc7baa-d97e-4978-bd44-9ac35fae0aad)
+
+For example let's see the average Recency, Frequency and Monetary values of customers according to each segment.
+
+## Average Recency by Segment
+
+![Screenshot 2023-12-09 230202](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/82820bf3-e8d5-468d-9554-3bfa1c1cc109)
+
+## Average Frequnecy by Segment
+
+![Screenshot 2023-12-09 225906](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/75da22af-4cdf-4642-9fe4-7a925bae20a9)
+
+## Average Monetary by Segment
+
+![Screenshot 2023-12-09 230039](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/214b3053-8eb5-4ce0-b826-f8529d306f60)
+
+
+
+
+
+
+
 
 
 
