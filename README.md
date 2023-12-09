@@ -68,6 +68,92 @@ Yes, we have enough information about the dataset and features. Now can starting
 
 # STEP 3: Import the Data and Data Preprocessing, Data Exploration
 
+First of all, we import the necessary libraries and upload the data from our local PC into the Jupyter Lab.
+
+![Screenshot 2023-12-09 154309](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/681e9625-89c2-4be3-9036-2f7f399ee387)
+
+We uploaded the data, let's see the first 5 rows of data.
+
+![Screenshot 2023-12-09 154327](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/83fd4d7b-8cfa-4023-bbe0-1a882b0cc85c)
+
+We have about 20000 different customers and 12 features about those customers as you can see above.
+
+Let's take a look at the featues.
+
+![Screenshot 2023-12-09 155545](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/f6787e48-c1b5-4cc6-a826-3c36bcf2f984)
+
+You already have enough information about the features. Now we should handle the missing values and outliers before calculating the RFM metrics and segmentation. On the other hand, we should convert some columns containing date values to datetime dtype to calculate the RFM metrics.
+
+![Screenshot 2023-12-09 155732](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/38687dcf-40d8-455d-bf42-308c894538a3)
+
+The results:
+
+![Screenshot 2023-12-09 155803](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/5120322f-e408-41b7-be0f-c9a08e9f98f3)
+
+Let's take an overview of the numeric variables.
+
+![Screenshot 2023-12-09 161833](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/64c4514c-fc1c-40cb-ab07-c8041b45230d)
+
+There seem to be outliers. First of all, we should handle the missing and outlier values and then move on to the EDA step. If we want to see outliers here, we can do "EDA" first or use libraries like "Pandas Profiling", but since we only have 4 numeric variables, we can also see outliers with the describe() function, so I did not use visualization tools like boxplot().
+
+Now we write a simple function to see the missing values, this function will return the number of missing values and percentage of missing values for each feature.
+
+![Screenshot 2023-12-09 163702](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/17b9141a-ebdd-466b-9d0e-a25c01ddd6ec)
+
+The results:
+
+![Screenshot 2023-12-09 163711](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/fdd443e6-f5a8-49f9-9efe-92ae91993c7b)
+
+As you can see we have no missing values, this is a good news because each observation is important for us.
+
+Now, we should check the outliers. There are different methods to identify outliers, in this project I will use the IQR method. Let's see these outliers, I have written a simple function to see outliers, in this function we need to write the values Q1 and Q3.
+
+When detecting outliers, I set Q1 and Q3 differently from the usual values of 0.25 and 0.75, which may vary for each data set and the type of analysis you want to perform. I kept the range wider for outliers.
+
+![Screenshot 2023-12-09 164113](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/b554eae0-3db4-41bd-98c6-fd2662d12e67)
+
+The results:
+
+![Screenshot 2023-12-09 164356](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/768dc767-0058-42f6-b184-306a31dde38b)
+
+Now that we have seen our outliers, we can either discard these outliers from the dataset or suppress them according to the values we want, we said that each observation is important, so we will suppress the observations that contain these outliers.
+
+![Screenshot 2023-12-09 165357](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/c6ed0238-4831-4d47-92ce-d79e4485e22d)
+
+The results:
+
+![Screenshot 2023-12-09 165409](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/376c01ce-1eeb-4990-b328-f90c2ecd6fc9)
+
+Now, we have no missing or outlier values. We can move to EDA.
+
+Finally, in this last little step, we will explore the dataset and gain insights about the categorical and numerical variables. To explore the data, we will use the Pandas Profiling library. The "Pandas Profiling" library is a very practical way to perform exploratory data analysis.
+
+Let's explore the data.
+
+![Screenshot 2023-12-09 170935](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/c8cc50fb-18b4-4bf7-a0e4-164cec9c4f4b)
+
+We saved the output as an "HTML" file for easier review and sharing with our teammates if necessary (I will add it to the repo the HTML file)
+
+I will put here some photos from Pandas Profiling for you. For example:
+
+![Screenshot 2023-12-09 171844](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/a09862b8-b84c-4f65-9978-311f7929dc28)
+![Screenshot 2023-12-09 171910](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/ce5e2c21-8f50-4f35-a2f5-827154fd3655)
+![Screenshot 2023-12-09 171947](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/80670f06-8ca3-4017-bd73-fb166d25f7dd)
+![Screenshot 2023-12-09 172000](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/241abd91-ae56-4be5-ad37-3c915893ccee)
+
+
+
+Yes, now we can start calculating RFM metrics to perform segmentation.
+
+# STEP 3: Calculating RFM Metrics
+
+
+
+
+
+
+
+
 
 
 
