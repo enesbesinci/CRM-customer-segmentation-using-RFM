@@ -145,7 +145,72 @@ I will put here some photos from Pandas Profiling for you. For example:
 
 Yes, now we can start calculating RFM metrics to perform segmentation.
 
-# STEP 3: Calculating RFM Metrics
+# STEP 3: Calculating RFM Metrics and Segmentation
+
+Let's copy our dataset to another dataframe and take a look at the first few lines again.
+
+![Screenshot 2023-12-09 175201](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/01c83689-cb4c-4660-9a67-03d4060f32d2)
+
+When doing RFM analysis, we work with historical data, so I set the analysis date as 2 days after the maximum date in the data set.
+
+![Screenshot 2023-12-09 175335](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/9ca2ed6b-449e-4124-874d-0a36ba951990)
+
+Now, we can calculate the RFM metrics. Let's calculate Recency, Frequency and Monetary metrics for each customer.
+
+![Screenshot 2023-12-09 175551](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/0dd1d821-f0fa-44f6-a6c7-270b5ee37422)
+
+Look at the results:
+
+![Screenshot 2023-12-09 175803](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/5db17cf2-ec0d-4576-b93c-8cb66ba39be2)
+
+After calculating the RFM metrics, we need to translate them into RFM scores, which we will record as recency_score, frequency_score and monetary_score.
+
+![Screenshot 2023-12-09 175931](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/8933bc04-f8f3-48d2-9205-a1c28c4aae10)
+
+The results:
+
+![Screenshot 2023-12-09 180002](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/3c3b04ea-4f8f-46d4-a952-e163e4a179cd)
+
+Let's create two variables named RF_SCORE and RFM_SCORE with the metrics we calculated and assign the RFM scores of each customer to these variables.
+
+![Screenshot 2023-12-09 180408](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/68c44c16-3dd8-4f83-b72f-69ede346be4d)
+
+Let's see the RF and RFM scores for each customer.
+
+![Screenshot 2023-12-09 180910](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/f89d5cbf-8dab-4b33-bfaf-17aa3f4f7694)
+
+We need to define segments for the RF scores created.
+
+![Screenshot 2023-12-09 180939](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/f1b30336-6a08-4cb5-ad9a-ba4f4081cfcb)
+
+The segmentation results:
+
+![Screenshot 2023-12-09 181138](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/d9cb96ce-cefb-46c8-a05b-dc8abf3367b7)
+
+Let's see how many customers we have in which segment.
+
+![Screenshot 2023-12-09 181355](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/a80bfd27-e27e-42a7-ad46-ea147bd3224c)
+
+Let's use the describe() function to examine the statistical summary of each segment and save this table in a csv file.
+
+Yes, we have now analyzed each of our customers with RFM metrics and created customer segments. After this stage, we should engage in sales, advertising and marketing activities specific to each customer segment.
+
+# STEP 4: Marketing Scenario
+
+In this step we w
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
