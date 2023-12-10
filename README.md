@@ -215,13 +215,39 @@ For example let's see the average Recency, Frequency and Monetary values of cust
 
 ![Screenshot 2023-12-09 230202](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/82820bf3-e8d5-468d-9554-3bfa1c1cc109)
 
+As expected, customers in the "champions" and "new_customers" segments have low Recency values. Taken together with the other graphs, customers in the "cant_loose" segment have high Recency values despite their high Frequency and Monetary values. Customers in this segment should be turned into active repeat customers through various advertising and promotional methods and special attention should be paid to this group.
+
 ## Average Frequnecy by Segment
 
 ![Screenshot 2023-12-09 225906](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/75da22af-4cdf-4642-9fe4-7a925bae20a9)
 
+Customers in the "champions" and "loyal_customers" categories have high Frequency values, and as you can see in the previous image, customers in the "cant_loose" segment should be paid attention to, why they do not shop from our company should be investigated and necessary steps should be taken.
+
 ## Average Monetary by Segment
 
 ![Screenshot 2023-12-09 230039](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/214b3053-8eb5-4ce0-b826-f8529d306f60)
+
+Customers in the "cant_loose" segment should be converted back into active customers, customers in the "champions" and "loyal_customer" segments should be rewarded with various loyalty programs, and the "new_customers", "promising", and "about_to_sleep" segments should be included in the "champions" and "loyal_customer" segments by using various advertising, sales, and marketing tools to increase their spending amounts and frequency.
+
+## Scenario
+
+"Let's walk through a sample scenario: Imagine our company is preparing to launch a premium women's shoe with a price higher than the average. To facilitate this launch, a marketing study is underway. Our target audience comprises customers who frequently shop in the 'WOMEN' category and fall into the 'champions' and 'loyal_customer' segments within the dataset. We aim to identify and provide the 'master_id' numbers of these customers to the marketing department."
+
+It's very simple.
+
+![Screenshot 2023-12-10 152455](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/d21927ad-8d4f-47ee-8c34-97c2f5629e1c)
+
+Here are the customer numbers of the customers in our target audience, who can now be contacted by e-mail, phone or other channels. We have about 2,500 customers.
+
+![Screenshot 2023-12-10 152514](https://github.com/enesbesinci/CRM-customer-segmentation-using-RFM/assets/110482608/89ad8b87-21a1-4548-9d16-83c21a862f56)
+
+Thank you for reading.
+
+
+
+
+
+
 
 
 
